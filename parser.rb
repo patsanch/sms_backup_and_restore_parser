@@ -12,7 +12,7 @@ rescue
   exit
 end
 
-savefile = File.open("parsed.txt}", "w+")
+savefile = File.open("parsed.txt", "w+")
 
 doc = Nokogiri::XML(f)
 smses = doc.xpath("//sms")
